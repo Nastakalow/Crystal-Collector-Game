@@ -1,0 +1,120 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dosis", sans-serif;
+  height: 100vh;
+  background-color: #d8e2dc;
+}
+
+.container {
+  background-color: #e9ecef;
+  width: 70%;
+  /* height: 500px; muveqqeti */
+  border: 3px solid #000;
+  border-radius: 3rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 3.6rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  text-align: center;
+  padding: 1.6rem;
+  border-bottom: 3px solid #000;
+  background-color: #40916c;
+}
+
+.main {
+  padding: 5.2rem 0;
+}
+
+.score-container {
+  margin-bottom: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.score-content {
+  padding: 1.8rem;
+  background-color: #b7e4c7;
+  border-radius: 1.6rem;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.score-content h3 {
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+}
+
+.score {
+  font-size: 5.2rem;
+}
+
+.crystals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.crystal-image {
+  width: 8.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.crystal-image:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  padding: 1.2rem;
+  border-top: 3px solid #000;
+  background-color: #40916c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+@media only screen and (max-width: 645px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .crystals {
+    flex-direction: column;
+  }
+}

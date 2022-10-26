@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./js/app.js" defer></script>
+    <title>Crystal Collector Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="header-title">Crystals Collector Game</h1>
+      </div>
+      <div class="main">
+        <div class="score-container">
+          <div class="score-content">
+            <h3>Target Score</h3>
+            <strong class="score" id="targetScore">29</strong>
+          </div>
+          <div class="score-content">
+            <h3>Current Score</h3>
+            <strong class="score" id="currentScore">29</strong>
+          </div>
+        </div>
+
+        <div class="crystals">
+          <img
+            src="./assets/images/purpleCrystal.svg"
+            alt="#"
+            id="purpleCrystals"
+            class="crystal-image"
+          />
+          <img
+            src="./assets/images/greenCrystal.svg"
+            alt="#"
+            id="greenCrystals"
+            class="crystal-image"
+          />
+          <img
+            src="./assets/images/redCrystal.svg"
+            alt="#"
+            id="redCrystals"
+            class="crystal-image"
+          />
+          <img
+            src="./assets/images/blueCrystal.svg"
+            alt="#"
+            id="blueCrystals"
+            class="crystal-image"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <h3 id="wins">Wins: 0</h3>
+        <h3 id="losses">Losses: 0</h3>
+      </div>
+    </div>
+
+    <div class="modal"></div>
+  </body>
+</html>
