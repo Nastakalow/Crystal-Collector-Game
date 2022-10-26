@@ -60,6 +60,7 @@ body {
   border-radius: 1.6rem;
   border: 2px solid #000;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .score-content h3 {
@@ -85,7 +86,7 @@ body {
 }
 
 .crystal-image:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .footer {
