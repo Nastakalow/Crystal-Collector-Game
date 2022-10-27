@@ -5,6 +5,31 @@ $(document).ready(function () {
   let lossesCount = 0;
   let winsCount = 0;
 
+  $("#startBtn").click(() => {
+    $(".modal").remove();
+  });
+
+  $("#purpleCrystals").click(function () {
+    sum += crystalValueObj["purple"]["value"];
+    $("#currentScore").html(sum);
+    checkGameOver(sum, tarScore);
+  });
+  $("#greenCrystals").click(function () {
+    sum += crystalValueObj["green"]["value"];
+    $("#currentScore").html(sum);
+    checkGameOver(sum, tarScore);
+  });
+  $("#redCrystals").click(function () {
+    sum += crystalValueObj["red"]["value"];
+    $("#currentScore").html(sum);
+    checkGameOver(sum, tarScore);
+  });
+  $("#blueCrystals").click(function () {
+    sum += crystalValueObj["blue"]["value"];
+    $("#currentScore").html(sum);
+    checkGameOver(sum, tarScore);
+  });
+
   function getTarScr() {
     const tarScr = Math.round(Math.random() * 102) + 19;
     $("#targetScore").html(tarScr);
@@ -27,27 +52,6 @@ $(document).ready(function () {
       },
     };
   }
-
-  $("#purpleCrystals").click(function () {
-    sum += crystalValueObj["purple"]["value"];
-    $("#currentScore").html(sum);
-    checkGameOver(sum, tarScore);
-  });
-  $("#greenCrystals").click(function () {
-    sum += crystalValueObj["green"]["value"];
-    $("#currentScore").html(sum);
-    checkGameOver(sum, tarScore);
-  });
-  $("#redCrystals").click(function () {
-    sum += crystalValueObj["red"]["value"];
-    $("#currentScore").html(sum);
-    checkGameOver(sum, tarScore);
-  });
-  $("#blueCrystals").click(function () {
-    sum += crystalValueObj["blue"]["value"];
-    $("#currentScore").html(sum);
-    checkGameOver(sum, tarScore);
-  });
 
   function setupGame() {
     sum = 0;

@@ -104,6 +104,56 @@ body {
   gap: 8rem;
 }
 
+.modal {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  padding: 3.2rem;
+  width: 95%;
+  height: 95%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 1.2rem;
+  opacity: 0.95;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.modal-content {
+  text-align: center;
+  width: 80%;
+}
+
+.modal-title {
+  font-size: 6.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+
+.modal-text {
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.start-button {
+  border: 2px solid #fff;
+  padding: 1rem 6rem;
+  border-radius: 1.2rem;
+  font-size: 3.6rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 @media only screen and (max-width: 645px) {
   html {
     font-size: 50%;
